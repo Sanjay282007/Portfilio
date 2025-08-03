@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1fcfe, #ffffff);
+  color: #333;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease;
+}
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-bottom: 2px solid #e0f7fa;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #2c3e50;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .header-buttons {
+      margin-top: 20px;
+    }
+    .header-buttons button, .header-buttons a {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #ffffff, #eef9ff);
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 999;
+}
+    nav a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+}
+    nav a:hover {
+  background-color: #d4f1ff;
+  text-decoration: none;
+}
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    .project {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    #btnTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 10px 15px;
+      border: none;
+      background-color: #F1FCFE;
+      color: #333;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      display: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #btnTop:hover {
+      background-color: #dff5fb;
+    }
+      @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .project:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+    }
+    a {
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      opacity: 0.85;
+    }
